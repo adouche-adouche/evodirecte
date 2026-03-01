@@ -26,7 +26,7 @@ bun add evodirecte
 See the [project wiki](https://github.com/softwarevo/evodirecte/wiki).
 
 ## License
-evoDirecte is licensed under the [EUPL 1.2](https://eupl.eu/)), allowing you to use, modify, and distribute it for both commercial and non-commercial purposes, provided that the license terms are respected. See the [LICENSE](/LICENSE) file for more details.
+evoDirecte is licensed under the [EUPL 1.2](https://eupl.eu/), allowing you to use, modify, and distribute it for both commercial and non-commercial purposes, provided that the license terms are respected. See the [LICENSE](/LICENSE) file for more details.
 
 ## Legal notice
 **YOU** are responsible for everything you made evoDirecte process. Don't use evoDirecte with accounts you don't have the permission to use.
