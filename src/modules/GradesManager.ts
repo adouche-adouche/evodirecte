@@ -1,9 +1,9 @@
 import { Fetcher } from "../utils/fetcher";
-import { evoDirecte } from "../core/evoDirecte";
+import { wrapDirecte } from "../core/wrapDirecte";
 import { Grade, Period, SubjectGrade } from "../types/grades";
 
 export class GradesManager {
-    constructor(private fetcher: Fetcher, private client: evoDirecte) {}
+    constructor(private fetcher: Fetcher, private client: wrapDirecte) {}
 
     async getGrades(schoolYear: string = ""): Promise<{ periods: Period[], grades: Grade[] }> {
         this.client.checkModule("NOTES");
@@ -47,7 +47,7 @@ export class GradesManager {
             subjectLabel: n.libelleMatiere,
             type: n.typeDevoir,
             comment: n.commentaire,
-            coefficient: this.parseNumber(n.coef) || 0,
+            coefficient: this.parseNumber(n.coef) || 1,
             outOf: this.parseNumber(n.noteSur) || 20,
             value: this.parseNumber(n.valeur),
             isLetter: n.enLettre,
