@@ -1,9 +1,9 @@
 import { Fetcher } from "../utils/fetcher";
-import { evoDirecte } from "../core/evoDirecte";
+import { wrapDirecte } from "../core/wrapDirecte";
 import { EDDocument, DocumentsList } from "../types/documents";
 
 export class DocumentsManager {
-    constructor(private fetcher: Fetcher, private client: evoDirecte) {}
+    constructor(private fetcher: Fetcher, private client: wrapDirecte) {}
 
     async getDocuments(archive: string = ""): Promise<DocumentsList> {
         this.client.checkModule("DOCUMENTS_ELEVE");
