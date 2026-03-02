@@ -22,7 +22,7 @@
   "scripts": {
     "build": "esbuild src/index.ts --bundle --platform=neutral --outfile=dist/index.js --sourcemap --format=esm",
     "test": "vitest",
-    "start": "tsx example.ts"
+    "start": "tsx src/index.ts"
   },
   "devDependencies": {
     "esbuild": "^0.20.0",
