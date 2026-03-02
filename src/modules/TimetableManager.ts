@@ -1,9 +1,9 @@
 import { Fetcher } from "../utils/fetcher";
-import { evoDirecte } from "../core/evoDirecte";
+import { wrapDirecte } from "../core/wrapDirecte";
 import { TimetableEvent } from "../types/timetable";
 
 export class TimetableManager {
-    constructor(private fetcher: Fetcher, private client: evoDirecte) {}
+    constructor(private fetcher: Fetcher, private client: wrapDirecte) {}
 
     async getTimetable(startDate: string, endDate: string): Promise<TimetableEvent[]> {
         this.client.checkModule("EDT");
